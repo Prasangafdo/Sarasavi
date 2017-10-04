@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Sarasavi.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+<link href="~/Styles/Site.css" rel="stylesheet" type="text/css" /> 
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="Images/background.jpg">
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="headerBefore">
+
+            <div class="loginDisplay">
+               
+                            <!--I put this here because I needed to take marquee to the social media & login form line-->
+            <marquee>
+                
+                    Sarasavi Library Management System
+                
+                </marquee>
+            </div>
+
+                                    <div class =socialMedia1>
+
+                <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/fb.png" />
+                <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/google.png" />
+                <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/twitter.png" />
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/youtube.png" />
+               </div>
+            </div>
+
+            </div>
+
+
+            </div>
+
+                        <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/registration.aspx" Text="User Registration"/>
+                        <asp:MenuItem NavigateUrl="~/BookRegistration.aspx" Text="Book Registration"/>
+                        <asp:MenuItem NavigateUrl="~/BorrowBook.aspx" Text="Book Borrowing"/>
+                        <asp:MenuItem NavigateUrl="~/ReserveBook.aspx" Text="Book Reservation"/>
+                        <asp:MenuItem NavigateUrl="~/ReturnBook.aspx" Text="Book Return"/>
+                        <asp:MenuItem NavigateUrl="~/viewBooks.aspx" Text="View All Books"/>
+                        <asp:MenuItem NavigateUrl="~/viewUsers.aspx" Text="View All Users"/>
+                        <asp:MenuItem NavigateUrl="~/inquiry.aspx" Text="Place Inquiry"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+
+        </div>
+        <div class="clear">
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,13 @@
+D:\Prasanga\Sarasavi\Sarasavi\bin\Sarasavi.dll
+D:\Prasanga\Sarasavi\Sarasavi\bin\Sarasavi.pdb
+D:\Prasanga\Sarasavi\Sarasavi\obj\Debug\Sarasavi.dll
+D:\Prasanga\Sarasavi\Sarasavi\obj\Debug\Sarasavi.pdb
+C:\Users\Prasanga Fernando\Documents\ESOFT\Prasanga\Prasanga\Sarasavi\Sarasavi\bin\Sarasavi.dll
+C:\Users\Prasanga Fernando\Documents\ESOFT\Prasanga\Prasanga\Sarasavi\Sarasavi\bin\Sarasavi.pdb
+C:\Users\Prasanga Fernando\Documents\ESOFT\Prasanga\Prasanga\Sarasavi\Sarasavi\obj\Debug\Sarasavi.dll
+C:\Users\Prasanga Fernando\Documents\ESOFT\Prasanga\Prasanga\Sarasavi\Sarasavi\obj\Debug\Sarasavi.pdb
+C:\Users\Prasanga Fernando\Documents\ESOFT\Asp.net\Sarasavi\Sarasavi\bin\Sarasavi.dll
+C:\Users\Prasanga Fernando\Documents\ESOFT\Asp.net\Sarasavi\Sarasavi\bin\Sarasavi.pdb
+C:\Users\Prasanga Fernando\Documents\ESOFT\Asp.net\Sarasavi\Sarasavi\obj\Debug\Sarasavi.dll
+C:\Users\Prasanga Fernando\Documents\ESOFT\Asp.net\Sarasavi\Sarasavi\obj\Debug\Sarasavi.pdb
+C:\Users\Prasanga Fernando\Documents\ESOFT\Asp.net\Sarasavi\Sarasavi\obj\Debug\Sarasavi.csprojResolveAssemblyReference.cache

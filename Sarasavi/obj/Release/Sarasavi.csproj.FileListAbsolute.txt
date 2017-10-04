@@ -1,0 +1,4 @@
+C:\Users\Prasanga Fernando\Documents\ESOFT\Prasanga\Prasanga\Sarasavi\Sarasavi\bin\Sarasavi.dll
+C:\Users\Prasanga Fernando\Documents\ESOFT\Prasanga\Prasanga\Sarasavi\Sarasavi\bin\Sarasavi.pdb
+C:\Users\Prasanga Fernando\Documents\ESOFT\Prasanga\Prasanga\Sarasavi\Sarasavi\obj\Release\Sarasavi.dll
+C:\Users\Prasanga Fernando\Documents\ESOFT\Prasanga\Prasanga\Sarasavi\Sarasavi\obj\Release\Sarasavi.pdb

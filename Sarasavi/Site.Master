@@ -48,9 +48,8 @@
                         <asp:MenuItem NavigateUrl="~/BorrowBook.aspx" Text="Book Borrowing"/>
                         <asp:MenuItem NavigateUrl="~/ReserveBook.aspx" Text="Book Reservation"/>
                         <asp:MenuItem NavigateUrl="~/ReturnBook.aspx" Text="Book Return"/>
-                        <asp:MenuItem NavigateUrl="~/viewBooks.aspx" Text="View All Books"/>
-                        <asp:MenuItem NavigateUrl="~/viewUsers.aspx" Text="View All Users"/>
-                        <asp:MenuItem NavigateUrl="~/inquiry.aspx" Text="Place Inquiry"/>
+                        <asp:MenuItem NavigateUrl="~/viewBooks.aspx" Text="All Books"/>
+                        <asp:MenuItem NavigateUrl="~/viewUsers.aspx" Text=" All Users"/>
                     </Items>
                 </asp:Menu>
             </div>

@@ -3,34 +3,24 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
- <div  class = "registration">
+    <div  class = "registration">
 <fieldset class = "bookFieldset">
 <legend>Book returning</legend>
-    <asp:Label ID="Label1" runat="server" Text="Return ID" ForeColor="White"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="Copy ISBN" ForeColor="White"></asp:Label>
     <br />
-    <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="373px"></asp:TextBox>
-    <br />
-    <br />
-    <asp:Label ID="Label3" runat="server" Text="Loan ID" ForeColor="White"></asp:Label>
-    <br />
-    <asp:TextBox ID="TextBox5" runat="server" Height="30px" Width="368px"></asp:TextBox>
+    <asp:TextBox ID="txtcopy_ISBN" runat="server" Height="30px" Width="373px"></asp:TextBox>
     <br />
     <br />
-    <asp:Label ID="Label10" runat="server" Text="Actual return date" ForeColor="White"></asp:Label>
+    <!--<asp:Label ID="Label2" runat="server" Text="Due date" ForeColor="White"></asp:Label>
+    <br />
+    <asp:Label ID="lblDueDate" runat="server" Text="Label" Font-Bold="True" 
+        Font-Size="Large" ForeColor="White"></asp:Label>
+    <br />-->
+    <asp:Label ID="Label10" runat="server" Text="Current date" ForeColor="White"></asp:Label>
     <br />
 
-    <br />
-    <br />
-    <asp:Label ID="Label4" runat="server" Text="Date" ForeColor="White"></asp:Label>
-    <br />
-    <asp:TextBox ID="TextBox6" runat="server" Height="30px" Width="368px"></asp:TextBox>
-    <br />
-    <br />
-    <br />
-    <asp:Label ID="Label5" runat="server" Text="Fine" ForeColor="White"></asp:Label>
-    <br />
-    <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="368px"></asp:TextBox>
-    <br />
+    <asp:Label ID="lblDate" runat="server" Text="Label" Font-Bold="True" 
+        Font-Size="Large" ForeColor="White"></asp:Label>
     <br />
     <asp:Button ID="Button1" runat="server" BackColor="#232B38" Height="57px" 
         Text="Return the book" Width="399px" BorderColor="#97704F" BorderStyle="Solid" 

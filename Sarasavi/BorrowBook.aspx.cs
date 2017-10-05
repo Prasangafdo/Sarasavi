@@ -37,8 +37,6 @@ namespace Sarasavi
 
             SqlConnection con = new SqlConnection(path);
              con.Open();
-            //Need to uncomment those
-
             try
             {
                // string sql = "INSERT INTO  BORROW (USER_NUMBER, ISBN, COPY_ISBN, BORROW_DATE, REAL_RETURN_DATE) values('" + num.Text + "','" + Name + "','" + gender + "','" + NIC.Text + "','" + addr.Text + "','" + uType.Text + "','" + username.Text + "','" + password.Text + "')";

@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<%--Date time picker--%>
+    <%--Date time picker--%>
 <link href="Styles/calendar-blue.css" rel="stylesheet" type="text/css" />
 <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
 <script src="Scripts/jquery.dynDateTime.min.js" type="text/javascript"></script>
@@ -53,7 +53,6 @@
     <br />
     <asp:TextBox ID="txtISBN" runat="server" Height="30px" Width="368px" 
         ontextchanged="txtISBN_TextChanged"></asp:TextBox>
-    <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="Button" />
     <br />
     <br />
     Copy ISBN<br />

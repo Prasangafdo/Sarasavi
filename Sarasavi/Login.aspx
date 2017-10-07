@@ -2,18 +2,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<body>
+<body background="Images/water.jpg">
 <div class = "login">
 <fieldset>
 <legend>Login </legend>
-    <asp:Label ID="lblUserNum" runat="server" Text="Usee Number" ForeColor="White"></asp:Label>
+    <asp:Label ID="lblUserNum" runat="server" Text="Username" ForeColor="White"></asp:Label>
     <br />
-    <asp:TextBox ID="txtUserNum" runat="server" Height="30px" Width="373px"></asp:TextBox>
+    <asp:TextBox ID="txtUsername" runat="server" Height="30px" Width="373px"></asp:TextBox>
     <br />
     <br />
     <asp:Label ID="lblPassword" runat="server" Text="Password" ForeColor="White"></asp:Label>
     <br />
-    <asp:TextBox ID="txtPassword" runat="server" Height="30px" Width="368px"></asp:TextBox>
+    <asp:TextBox ID="txtPassword" runat="server" Height="30px" Width="368px" TextMode="Password"></asp:TextBox>
     <br />
     <br />
     <br />
@@ -21,7 +21,7 @@
     <asp:Button ID="btnLogin" runat="server" BackColor="#232B38" Height="57px" 
         Text="Login" Width="399px" BorderColor="#97704F" BorderStyle="Solid" 
         BorderWidth="4px" Font-Bold="True" Font-Size="18px" ForeColor="White" 
-        ToolTip="Click to login to the system" />
+        ToolTip="Click to login to the system" onclick="btnLogin_Click" />
         </fieldset>
         </div>
         </body>

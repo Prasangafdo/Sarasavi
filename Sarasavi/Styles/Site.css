@@ -14,12 +14,12 @@ marquee{
 	 direction:left;
 	 behavior:alternate;
 	 scrollamount:0;
-	 padding:20px;
+	 padding:10px;
 	 background-color:#4E4B20;
-	 opacity: 0.6;
+	 opacity: 0.8;
      filter: alpha(opacity=50); 
      font-family:Verdana;
-     font-size:50px;
+   
 }
 .bottom_logo
 {

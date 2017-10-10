@@ -31,12 +31,14 @@
 <legend>Book Reservation</legend>
     <asp:Label ID="Label1" runat="server" Text="User Number" ForeColor="White"></asp:Label>
     <br />
-    <asp:TextBox ID="txt_userNumber" runat="server" Height="30px" Width="373px"></asp:TextBox>
+    <asp:TextBox ID="txt_userNumber" runat="server" Height="30px" Width="373px" 
+        ToolTip="Enter user number here"></asp:TextBox>
     <br />
     <br />
     <asp:Label ID="Label3" runat="server" Text="Copy ISBN" ForeColor="White"></asp:Label>
     <br />
-    <asp:TextBox ID="txt_copyISBN" runat="server" Height="30px" Width="368px"></asp:TextBox>
+    <asp:TextBox ID="txt_copyISBN" runat="server" Height="30px" Width="368px" 
+        ToolTip="Enter copy ISBN here"></asp:TextBox>
 
     <br />
     <br />
@@ -53,11 +55,12 @@
         <asp:Button ID="btn_reserve" runat="server" BackColor="#008200" Height="57px" 
             Text="Reserve" Width="399px" BorderColor="Lime" BorderStyle="Solid" 
             BorderWidth="4px" Font-Bold="True" Font-Size="18px" ForeColor="White" 
-        onclick="Button1_Click" />
+        onclick="Button1_Click" ToolTip="Reserve the book" />
 
         <asp:Button ID="btn_cancel_reserve" runat="server" BackColor="#B00000" Height="57px" 
         Text="Cancel Reservation" Width="399px" BorderColor="#FF3300" BorderStyle="Solid" 
-        BorderWidth="4px" Font-Bold="True" Font-Size="18px" ForeColor="White" />
+        BorderWidth="4px" Font-Bold="True" Font-Size="18px" ForeColor="White" 
+        ToolTip="Cancel the reservertion" />
         </fieldset>
         </div>
 

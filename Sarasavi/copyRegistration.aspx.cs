@@ -56,8 +56,6 @@ namespace Sarasavi
                 txtTitle.Text = reader[1].ToString();
             }
             reader.Close();
-            ///////////Edited by me
-            //txtCopyISBN.Text;
             String check = "SELECT COUNT(COPY_ISBN) as maxCopy FROM COPY WHERE ISBN='" + txtISBN.Text + "'";
             SqlCommand cmd1 = new SqlCommand(check, con);
             int cnum;

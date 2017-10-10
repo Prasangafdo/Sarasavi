@@ -38,7 +38,7 @@
     <asp:Label ID="Label14" runat="server" ForeColor="White" 
         Text="Copy Type"></asp:Label>
     <br />
-    <asp:DropDownList ID="ddlCopyType" runat="server" Height="30px" Width="82px">
+    <asp:DropDownList ID="ddlCopyType" runat="server" Height="50px" Width="360px">
         <asp:ListItem>Borrowed</asp:ListItem>
         <asp:ListItem>Reserved</asp:ListItem>
     </asp:DropDownList>
@@ -48,7 +48,7 @@
   </form>
 
     <asp:Button ID="btnCopyReg1" runat="server" onclick="btnCopyReg1_Click" 
-        Text="Register Copy" />
+        Text="Register Copy" BackColor="#009900" Height="51px" Width="370px" />
 </form>
 </fieldset>
 </div>

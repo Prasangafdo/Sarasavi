@@ -27,6 +27,7 @@ namespace Sarasavi
             String current_date = DateTime.Now.ToString("yyyy-MM-dd");
             lblDate.Text = current_date;
 
+            //Uncomment following lines if retriving fines
           /*   DateTime xmas = new DateTime(2020, 12, 25);//Getting date difference
              double daysUntilChristmas = xmas.Subtract(DateTime.Today).TotalDays;
 
@@ -45,12 +46,9 @@ namespace Sarasavi
             {
                 String update = "UPDATE COPY set Available ='1' where COPY_ISBN = '" + txtcopy_ISBN.Text + "'";
 
-                // string sql = "INSERT INTO  BORROW1 (BORROW_ID, USER_NUMBER, ISBN, COPY_ISBN, BORROW_DATE, RR_DATE) values('23', '2321', '232331','2314', '2017-10-11' ,'2017-10-11' )";
-
-               // SqlCommand cmb = new SqlCommand(sql, con);
+               
                 SqlCommand cmb1 = new SqlCommand(update, con);
 
-              //  cmb.ExecuteNonQuery();
                 cmb1.ExecuteNonQuery();
 
                 //  lblErr.Visible = true;

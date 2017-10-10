@@ -35,9 +35,7 @@ namespace Sarasavi
 
             try
             {
-                string book = "INSERT INTO BOOK(ISBN,BOOK_TITLE,PUBLISHER,AUTHOR,EDITION,CATEGORY) values('" + txtISBN.Text + "','" + txtbookTtle.Text + "','" + txtPublisher.Text + "','" + txtAuthor.Text + "','" + txtEdition.Text + "','" + txtCategory.Text + "')";
-
-               // string copy = "INSERT INTO COPY(COPY_ISBN,COPY_TYPE,ISBN) values('" + txtCopyISBN.Text + "','" + ddlCopyType.Text + "','" + txtISBNcp.Text + "')";//
+                string book = "INSERT INTO BOOK(ISBN,BOOK_TITLE,PUBLISHER,AUTHOR,EDITION,CATEGORY) values+('" + txtISBN.Text + "','" + txtbookTtle.Text + "','" + txtPublisher.Text + "','" + txtAuthor.Text + "','" + txtEdition.Text + "','" + txtCategory.Text + "')";
 
                 SqlCommand cmd = new SqlCommand(book, con);
                 cmd.ExecuteNonQuery();
@@ -48,59 +46,9 @@ namespace Sarasavi
                   lblErr.Text = "Invalid !";
             }
             con.Close();
-            Response.Redirect("copyRegistration.aspx");//redirecting t copy registration
+            Response.Redirect("copyRegistration.aspx");//redirecting to copy registration
             
 
         }
-
-       /* protected void ISBNChange(object sender, EventArgs e)
-        {
-
-            //take tpyped ISBN to the variable(realISBN)
-            int realISBN = Convert.ToInt32(txtISBNcp.Text);
-            //import database connection
-
-            connection();
-
-            SqlConnection con = new SqlConnection(path);
-            con.Open();
-
-            //Access to max copy no from copy table 
-            string sql = "SELECT COUNT(COPY_ISBN) FROM  COPY WHERE ISBN='" + txtISBNcp.Text + "'";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            //cmd.ExecuteNonQuery();
-            SqlDataReader reader = cmd.ExecuteReader();
-            int value;
-            while (reader.Read())
-            { //pass that value into the array
-                value = Convert.ToInt32(reader[0].ToString());
-
-            }
-            //Add 1 (+1) for the array and assig into variable (copyNo)
-            int currentCopy = Convert.ToInt32(reader[0].ToString()) + 1;
-            //display value in Copy ISBN text box(realISBN-copyNo)
-            txtCopyISBN.Text = "ll";//Need to edit this
-            // con.Close();           
-        }*/
-
-
-
-        /* public int getnumofCopies()
-        {
-           int copies_intparse;
-            copies_intparse = int.Parse(ddlnumofCopies.Text);
-            return copies_intparse;
-        }*/
-
-        /* public int getcopyISBN()
-         {
-             int Copies = 0;
-             Copies = Copies * getnumofCopies();
-             return Copies;
-         }*/
-        //public string setcopyISBN()
-        //{
-
-        //}
     }
 }

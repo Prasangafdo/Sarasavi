@@ -39,8 +39,7 @@ namespace Sarasavi
              con.Open();
             try
             {
-               // string sql = "INSERT INTO  BORROW (USER_NUMBER, ISBN, COPY_ISBN, BORROW_DATE, REAL_RETURN_DATE) values('" + num.Text + "','" + Name + "','" + gender + "','" + NIC.Text + "','" + addr.Text + "','" + uType.Text + "','" + username.Text + "','" + password.Text + "')";
-
+           
                DateTime borrow_date = DateTime.Parse(Request.Form[txtBorrowDate.UniqueID]);
                DateTime RR_Date = DateTime.Parse(Request.Form[txtRRDate.UniqueID]);
 
@@ -49,8 +48,6 @@ namespace Sarasavi
                string sql = "INSERT INTO  BORROW1 (USER_NUMBER, ISBN, COPY_ISBN, BORROW_DATE, RR_DATE) values('" + txtUserNum.Text + "', '" + txtISBN.Text + "','" + copyISBN + "', '" + borrow_date + "' ,'" + RR_Date + "' )";
                String update = "UPDATE COPY set Available ='0' where COPY_ISBN = '"+copyISBN+"'";
 
-               // string sql = "INSERT INTO  BORROW1 (BORROW_ID, USER_NUMBER, ISBN, COPY_ISBN, BORROW_DATE, RR_DATE) values('23', '2321', '232331','2314', '2017-10-11' ,'2017-10-11' )";
-               
                 SqlCommand cmb = new SqlCommand(sql, con);
                 SqlCommand cmb1 = new SqlCommand(update, con);
 

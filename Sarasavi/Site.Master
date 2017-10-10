@@ -50,6 +50,7 @@
                         <asp:MenuItem NavigateUrl="~/ReturnBook.aspx" Text="Book Return"/>
                         <asp:MenuItem NavigateUrl="~/viewBooks.aspx" Text="All Books"/>
                         <asp:MenuItem NavigateUrl="~/viewUsers.aspx" Text=" All Users"/>
+                        <asp:MenuItem NavigateUrl="~/help.aspx" Text=" Help menu"/>
                     </Items>
                 </asp:Menu>
             </div>

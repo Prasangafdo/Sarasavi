@@ -11,11 +11,6 @@
     <asp:TextBox ID="txtcopy_ISBN" runat="server" Height="30px" Width="373px"></asp:TextBox>
     <br />
     <br />
-    <!--<asp:Label ID="Label2" runat="server" Text="Due date" ForeColor="White"></asp:Label>
-    <br />
-    <asp:Label ID="lblDueDate" runat="server" Text="Label" Font-Bold="True" 
-        Font-Size="Large" ForeColor="White"></asp:Label>
-    <br />-->
     <asp:Label ID="Label10" runat="server" Text="Current date" ForeColor="White"></asp:Label>
     <br />
 
@@ -32,7 +27,7 @@
   		<div class="footer-distributed12">
 
 			<div class="footer-left">
-            <h2><a href="Default.aspx">Sarasavi Library</a> </h2><!--Should add a link to the homepage-->
+            <h2><a href="Default.aspx">Sarasavi Library</a> </h2>
 				
 
 				<p class="footer-links">
@@ -40,7 +35,6 @@
 					<a href="About.aspx">About</a>
 					<a href="Contact.aspx">Contact</a>
 
-                    <!--Ask miss for the correct linkings....-->
 				</p>
 
 				<p class="footer-company-name">Sarasavi Library &copy; 2016</p>

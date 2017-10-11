@@ -49,6 +49,15 @@ namespace Sarasavi {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
+        /// btnErrorMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnErrorMsg;
+        
+        /// <summary>
         /// txtBookTitle control.
         /// </summary>
         /// <remarks>
@@ -74,15 +83,6 @@ namespace Sarasavi {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAuthor;
-        
-        /// <summary>
-        /// btnErrorMsg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnErrorMsg;
         
         /// <summary>
         /// txtEdition control.

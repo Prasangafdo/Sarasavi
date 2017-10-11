@@ -2,13 +2,21 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:TextBox ID="txtISBN" runat="server"></asp:TextBox>
+    <br />
+&nbsp;&nbsp;&nbsp;
+<div align="center">
+    <asp:TextBox ID="txtISBN" runat="server" Height="37px" 
+        ToolTip="Enter Book ISBN" Width="133px">Book ISBN here</asp:TextBox>
+    &nbsp;&nbsp;&nbsp;
     <asp:Button ID="btnSearch" runat="server" Text="Search" 
-        onclick="btnSearch_Click" /><br />
-
+        onclick="btnSearch_Click" Height="41px" Width="94px" />
+    <br />
+    <br />
+ 
     <asp:GridView ID="dgvBook" runat="server" AutoGenerateColumns="False" 
     DataKeyNames="ISBN" DataSourceID="SqlDataSource1" 
-    EmptyDataText="There are no data records to display.">
+    EmptyDataText="There are no data records to display." Height="189px" 
+        Width="596px" style="text-align:center; color:#fff" align="center">
         <Columns>
             <asp:BoundField DataField="ISBN" HeaderText="ISBN" ReadOnly="True" 
                 SortExpression="ISBN" />
@@ -24,6 +32,7 @@
                 SortExpression="CATEGORY" />
         </Columns>
 </asp:GridView>
+
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
     ConnectionString="<%$ ConnectionStrings:SARASAVI_BOOKSHOPConnectionString1 %>" 
     DeleteCommand="DELETE FROM [BOOK] WHERE [ISBN] = @ISBN" 
@@ -53,26 +62,34 @@
 </asp:SqlDataSource>
 
     <br />
-    <br />
-    <asp:TextBox ID="txtBookTitle" runat="server"></asp:TextBox>
-    <br />
-    <asp:TextBox ID="txtPublisher" runat="server"></asp:TextBox>
-    <br />
-    <asp:TextBox ID="txtAuthor" runat="server"></asp:TextBox>
 
     <asp:Button ID="btnErrorMsg" runat="server" Height="39px" 
         style="font-family: Candara; background-color: #fff; margin-left: 133px;" Text="Failed" 
         Width="284px" />
 
     <br />
-    <asp:TextBox ID="txtEdition" runat="server"></asp:TextBox>
     <br />
-    <asp:TextBox ID="txtCategory" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtBookTitle" runat="server" Height="35px" Width="147px">Book Title</asp:TextBox>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:TextBox ID="txtPublisher" runat="server" Height="34px" Width="147px">Publisher</asp:TextBox>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:TextBox ID="txtAuthor" runat="server" Height="30px" Width="143px">Author</asp:TextBox>
+
     <br />
 
+    <br />
+    <asp:TextBox ID="txtEdition" runat="server" Height="33px" Width="143px">Edition</asp:TextBox>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:TextBox ID="txtCategory" runat="server" Height="34px" Width="151px">Category</asp:TextBox>
+    <br />
+    <br />
+    <p style="text-align:center">
     <asp:Button ID="btnUpdate" runat="server" Text="Update" 
-        onclick="btnUpdate_Click" />
+        onclick="btnUpdate_Click" BackColor="#58D662" Height="53px" 
+            style="margin-left: 0px" Width="109px" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Button ID="btnDelete" runat="server" Text="Delete" 
-        onclick="btnDelete_Click" />
-
+        onclick="btnDelete_Click" BackColor="#EE2906" Height="50px" Width="124px" />
+        </p>
+        </div>
     </asp:Content>
